@@ -97,6 +97,7 @@ public class EnemyGeneratorScript : MonoBehaviour
 
         //Playerの位置から算出した位置を指定
         _enemySpwnPosition = _enemySpwnPosition + _playerPosition;
+        _enemySpwnPosition.y = 0.5f;
 
         //Prefabの生成
         var _enemy = Instantiate(_enemyPrefab, _enemySpwnPosition, transform.rotation);
